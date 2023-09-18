@@ -41,7 +41,9 @@ class _MainScreenState extends State<MainScreen> {
         selectedItemColor: Colors.yellow.shade100,
         items: [
           BottomNavigationBarItem(
-              icon: Icon(CupertinoIcons.home), label: 'HOME'),
+              icon: Icon(CupertinoIcons.home),
+              label: 'HOME',
+              backgroundColor: Colors.yellow.shade700),
           BottomNavigationBarItem(
               icon: Image.asset(
                 'assets/icons/Explore.png',
@@ -75,7 +77,7 @@ class _MainScreenState extends State<MainScreen> {
               label: 'ACCOUNT'),
         ],
       ),
-    body: _pages[_pageIndex],  
+      body: _pages[_pageIndex],
     );
   }
 }
